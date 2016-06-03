@@ -11,27 +11,63 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   margin-bottom: 15px;
   text-align: center;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 175%
 }
 
-p {
-  border: 2px solid black;
+div#container {
+  border: 1px solid black;
   margin-bottom: 15px;
   background-color: gray;
+  position: relative;
   width: 95%;
-  height: 150px;
+  height: auto;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
+.position {
+  margin: 10px;
+  padding: 15px;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif
 }
+
+p {
+  width: 120px;
+  height: auto;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-size: 125%;
+  font-family: Impact, Charcoal, sans-serif;
+
+}
+
+#p1 {
+  background-color: #6CD9F7;
+}
+
+#p2 {
+  background-color: #DEB887;
+}
+
+#p3 {
+  background-color: #FD9AF6;
+}
+
+
+/* Simple Responsive Framework. */
 
 /********** Browser Window only **********/
 @media (min-width: 992px) {
@@ -168,11 +204,28 @@ p {
 <body>
 <h1>Our Menu</h1>
 
-<div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-12"><p>Chicken</p></div>
-  <div class="col-lg-4 col-md-6 col-sm-12"><p>Beef</p></div>
-  <div class="col-lg-4 col-md-12 col-sm-12"><p>Sushi</p></div>
-</div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div id="container">
+      <div class="position">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+      </div>
+      <p id="p1">Chicken</p>
+    </div>
+  </div>
 
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div id="container">
+      <div class="position">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+      </div>
+      <p id="p2">Beef</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-12 col-sm-12">
+    <div id="container">
+      <div class="position">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+      </div>
+      <p id="p3">Sushi</p>
+    </div>
+  </div>
 </body>
 </html>
